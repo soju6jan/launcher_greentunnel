@@ -160,6 +160,7 @@ class Logic(object):
     def install():
         try:
             def func():
+                import system
                 Logic.kill()
                 commands = [
                     ['msg', u'잠시만 기다려주세요.'],
