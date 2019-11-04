@@ -139,7 +139,7 @@ class Logic(object):
     @staticmethod
     def run():
         if Logic.current_process is None:
-            cmd = ['green-tunnel', '--ip', '0.0.0.0', '--port', ModelSetting.get('port'), '--dnsType', ModelSetting.get('dnsType'), '--dnsServer', ModelSettings.get('dnsServer')]
+            cmd = ['green-tunnel', '--ip', '0.0.0.0', '--port', ModelSetting.get('port'), '--dnsType', ModelSetting.get('dnsType'), '--dnsServer', ModelSetting.get('dnsServer')]
             Logic.current_process = subprocess.Popen(cmd)
 
     @staticmethod
