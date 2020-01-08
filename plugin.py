@@ -44,7 +44,7 @@ plugin_info = {
     'icon' : '',
     'developer' : 'soju6jan',
     'description' : 'GreenTunnel 런처<br><a href="https://github.com/SadeghHayeri/GreenTunnel" target="_blank">GreenTunnel Git</a><br><br>DPI 시스템을 우회하는 Proxy 서버 입니다.<br>도커만 지원합니다.',
-    'home' : 'https://github.com/soju6jan/launcher_greentunnel_sjva',
+    'home' : 'https://github.com/soju6jan/launcher_greentunnel',
     'more' : '',
 }
 #########################################################
