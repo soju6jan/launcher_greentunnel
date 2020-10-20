@@ -24,8 +24,8 @@ from system.logic import SystemLogic
 # 패키지
 package_name = __name__.split('.')[0]
 logger = get_logger(package_name)
-from logic import Logic
-from model import ModelSetting
+from .logic import Logic
+from .model import ModelSetting
 
 
 
@@ -39,11 +39,11 @@ def plugin_unload():
 
 plugin_info = {
     'version' : '0.1.0.0',
-    'name' : 'GreenTunnel',
+    'name' : u'GreenTunnel',
     'category_name' : 'launcher',
     'icon' : '',
     'developer' : 'soju6jan',
-    'description' : 'GreenTunnel 런처<br><a href="https://github.com/SadeghHayeri/GreenTunnel" target="_blank">GreenTunnel Git</a><br><br>DPI 시스템을 우회하는 Proxy 서버 입니다.<br>도커만 지원합니다.',
+    'description' : u'GreenTunnel 런처<br><a href="https://github.com/SadeghHayeri/GreenTunnel" target="_blank">GreenTunnel Git</a><br><br>DPI 시스템을 우회하는 Proxy 서버 입니다.<br>도커만 지원합니다.',
     'home' : 'https://github.com/soju6jan/launcher_greentunnel',
     'more' : '',
     'running_type' : ['docker']
@@ -52,9 +52,9 @@ plugin_info = {
 
 # 메뉴 구성.
 menu = {
-    'main' : [package_name, 'GreenTunnel'],
+    'main' : [package_name, u'GreenTunnel'],
     'sub' : [
-        ['setting', '설정'], ['log', '로그']
+        ['setting', u'설정'], ['log', u'로그']
     ], 
     'category' : 'launcher',
 }  
